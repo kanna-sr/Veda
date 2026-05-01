@@ -5,7 +5,6 @@ title = 'NVIDIA GeForce GPU Architecture'
 +++
 
 ## Intro
-
 This blog post highlights the important components in a GeForce GPU and how it interfaces with the CPU. 
 
 The "Host" CPU interfaces with the "Device" GPU through PCIe busses. The CPU writes information to the GPU's global memory VRAM. The GPU unit has read only constant/texture memory regions. Constant memory is always available to threads while texture memory is for 2d spatial locality like image processing or computer vision tasks. Each GPU also contains 100+ SMX devices which do heavy lifting work. If the SMX does not have data it needs, it will access the L2 cache or pass the request to the multiple memory controllers on the device to get data from global memory.
