@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on My New Hugo Project</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Hugo Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Apr 2026 18:47:16 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NVIDIA GeForce GPU Architecture</title>
+      <link>http://localhost:1313/posts/gpu_arch/</link>
+      <pubDate>Thu, 30 Apr 2026 18:47:16 -0400</pubDate>
+      <guid>http://localhost:1313/posts/gpu_arch/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;This blog post highlights the important components in a GeForce GPU and how it interfaces with the CPU.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Host&amp;rdquo; CPU interfaces with the &amp;ldquo;Device&amp;rdquo; GPU through PCIe busses. The CPU writes information to the GPU&amp;rsquo;s global memory VRAM. The GPU unit has read only constant/texture memory regions. Constant memory is always available to threads while texture memory is for 2d spatial locality like image processing or computer vision tasks. Each GPU also contains 100+ SMX devices which do heavy lifting work. If the SMX does not have data it needs, it will access the L2 cache or pass the request to the multiple memory controllers on the device to get data from global memory.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
